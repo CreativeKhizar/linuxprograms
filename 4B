@@ -1,0 +1,11 @@
+echo "Enter the name of the file to search"
+
+read file
+
+echo "Enter the word to search for number of occurences in the file"
+
+read word
+
+echo "The number of times $word is present in $file is "
+
+grep -io $word $file | wc -l
